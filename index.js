@@ -12,8 +12,8 @@
 
 var userOpt = prompt("Enter option '1' to count down , enter option '2' to  count up or enter 'q' to quit " );
 
-// while (userOpt !== "q")
-// {
+while (userOpt !== "q")
+{
 
     if( userOpt === "1")
 
@@ -28,7 +28,7 @@ var userOpt = prompt("Enter option '1' to count down , enter option '2' to  coun
             console.log(countDownTo);
             countDownTo --;
         }
-
+        userOpt = prompt(" enter 'q' to quit " );
     }
 
 
@@ -36,20 +36,21 @@ var userOpt = prompt("Enter option '1' to count down , enter option '2' to  coun
         {
 
             var countUpTo = parseInt(prompt("Enter a number to count Up to :"));
+            var i = 0;
 
 
-            while (countUpTo <= 0)
+            while (i >= countUpTo)
 
             {
-                console.log(countUpTo);
+                console.log(i);
                 countUpTo ++;
             }
 
-
+            userOpt = prompt(" enter 'q' to quit " );
         }
 
-// }
-// userOpt = prompt(" enter 'q' to quit " );
+}
+userOpt = prompt(" enter 'q' to quit " );
 
 
 
