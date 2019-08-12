@@ -29,9 +29,10 @@ while (userOpt !== "q")
             countDownTo --;
         }
         userOpt = prompt(" enter 'q' to quit " );
+
     }
 
-
+// BROKEN
      if ( userOpt === "2")
         {
 
